@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600');
+
+$colors: (
+  gray: #E9E9E9,
+  green: #77DD77,
+);
+
+$padding: 80px;
+
+@mixin font {
+  font-family: "Montserrat", sans-serif;
+  font-weight: lighter;
+  color: returnColors(green);
+}
+
+@function returnColors($color) {
+  @return map-get($colors, $color);
+}
+
+body, html {
+  margin: 0;
+}
+
+body {
+  background-color: returnColors(gray);
+
+  header {
+    padding: $padding / 4;
+    @include font;
+    font-size: 2em;
+  }
+
+  .centerText {
+    text-align: center;
+    @include font;
+    font-size: 4em;
+    text-transform: uppercase;
+    padding: $padding;
+    margin-top: 20%;
+  }
+
+  .stressInput {
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    @include font;
+    font-size: 4em;
+    input[type = text] {
+      border: none;
+      border-radius: 15px;
+      text-align: center;
+      font-size: 0.5em;
+      width: 85%;
+      height: 100%;
+    }
+  }
+
+  .btn {
+    display: flex;
+    justify-content: center;
+    padding: $padding;
+    button {
+      background: none;
+      border: none;
+      @include font;
+      color: white;
+      font-size: 2em;
+      text-transform: uppercase;
+      border-radius: 15px;
+      background-color: returnColors(green);
+      width: 75%;
+      height: 100px;
+    }
+  }
+
+}

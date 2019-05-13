@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,600");
+body, html {
+  margin: 0; }
+
+body {
+  background-color: #E9E9E9; }
+  body header {
+    padding: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: lighter;
+    color: #77DD77;
+    font-size: 2em; }
+  body .centerText {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: lighter;
+    color: #77DD77;
+    font-size: 4em;
+    text-transform: uppercase;
+    padding: 80px;
+    margin-top: 20%; }
+  body .stressInput {
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: lighter;
+    color: #77DD77;
+    font-size: 4em; }
+    body .stressInput input[type=text] {
+      border: none;
+      border-radius: 15px;
+      text-align: center;
+      font-size: 0.5em;
+      width: 85%;
+      height: 100%; }
+  body .btn {
+    display: flex;
+    justify-content: center;
+    padding: 80px; }
+    body .btn button {
+      background: none;
+      border: none;
+      font-family: "Montserrat", sans-serif;
+      font-weight: lighter;
+      color: #77DD77;
+      color: white;
+      font-size: 2em;
+      text-transform: uppercase;
+      border-radius: 15px;
+      background-color: #77DD77;
+      width: 75%;
+      height: 100px; }
+
+/*# sourceMappingURL=stress.css.map */

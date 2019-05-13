@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600');
+
+$colors: (
+  gray: #E9E9E9,
+  green: #77DD77,
+);
+
+$padding: 80px;
+
+@mixin font {
+  font-family: "Montserrat", sans-serif;
+  font-weight: lighter;
+  color: returnColors(green);
+}
+
+@function returnColors($color) {
+  @return map-get($colors, $color);
+}
+
+body, html {
+  margin: 0;
+}
+
+body {
+  background-color: map-get($colors, gray);
+
+  .container {
+  .logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 60%;
+
+    .tree {
+      width: 250px;
+      height: 300px;
+    }
+  }
+
+  .title {
+    padding: $padding;
+    text-align: center;
+    h1 {
+      @include font;
+      font-size: 4em;
+    }
+  }
+
+  .arrowCircle {
+    width: 300px;
+    height: 300px;
+    background: none;
+    border: 4px solid returnColors(green);
+    border-radius: 50%;
+    margin: 0 35%;
+    display: flex;
+    justify-content: center;
+
+    .arrow {
+      align-self: center;
+    }
+  }
+
+  footer {
+    text-align: center;
+    padding: $padding;
+
+    h1 {
+      @include font;
+      font-size: 3em;
+    }
+  }
+}
+}
